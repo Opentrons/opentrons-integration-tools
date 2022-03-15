@@ -12,7 +12,7 @@ UFACTORY_IP = "192.168.1.207"
 metadata = {
     'protocolName': 'UFACTORY Example',
     'author': 'Nicolas Binford <nicolas.binford@opentrons.com>',
-    'description': 'Move the UFACTORY arm in a protocol',
+    'description': 'Move the UFACTORY xArm in a protocol',
     'apiLevel': '2.12'
 }
 
@@ -22,56 +22,56 @@ def ufactory_action(ctx):
     ctx.comment("UFACTORY action function")
 
     # Instantiate arm
-    arm = XArmAPI(UFACTORY_IP)
-    arm.motion_enable(enable=True)
-    arm.set_mode(0)
-    arm.set_state(state=0)
+    my_xarm = XArmAPI(UFACTORY_IP)
+    my_xarm.motion_enable(enable=True)
+    my_xarm.set_mode(0)
+    my_xarm.set_state(state=0)
 
     # Enable biogripper
-    arm.set_bio_gripper_enable(True)
-    arm.set_bio_gripper_speed(300)
+    my_xarm.set_bio_gripper_enable(True)
+    my_xarm.set_bio_gripper_speed(300)
 
-    arm.reset(wait=True)
+    my_xarm.reset(wait=True)
 
     # Box/starting position
-    arm.set_position(x=200, y=0, z=110, speed=50, wait=True)
+    my_xarm.set_position(x=200, y=0, z=110, speed=50, wait=True)
     ctx.delay(seconds=1)
 
     # Start gripper as open
-    arm.open_bio_gripper()
+    my_xarm.open_bio_gripper()
     ctx.delay(seconds=1)
 
     # Move base joint
-    arm.set_servo_angle(servo_id=1, angle=45, speed=50, wait=True)
+    my_xarm.set_servo_angle(servo_id=1, angle=45, speed=50, wait=True)
     ctx.delay(seconds=1)
 
     # Grab object
-    code = arm.close_bio_gripper()
+    my_xarm.close_bio_gripper()
     ctx.delay(seconds=1)
 
     # Move second joint up
-    arm.set_servo_angle(servo_id=2, angle=-10, speed=50, wait=True)
+    my_xarm.set_servo_angle(servo_id=2, angle=-10, speed=50, wait=True)
     ctx.delay(seconds=1)
 
     # Move base joint back over
-    arm.set_servo_angle(servo_id=1, angle=0, speed=50, wait=True)
+    my_xarm.set_servo_angle(servo_id=1, angle=0, speed=50, wait=True)
     ctx.delay(seconds=1)
 
     # Move second joint back down
-    arm.set_servo_angle(servo_id=2, angle=0, speed=50, wait=True)
+    my_xarm.set_servo_angle(servo_id=2, angle=0, speed=50, wait=True)
     ctx.delay(seconds=1)
 
     # Drop object
-    arm.open_bio_gripper()
+    my_xarm.open_bio_gripper()
     ctx.delay(seconds=1)
 
     # Back to starting position
-    arm.set_position(x=200, y=0, z=110, speed=50, wait=True)
+    my_xarm.set_position(x=200, y=0, z=110, speed=50, wait=True)
     ctx.delay(seconds=1)
 
     # Cleanup
-    arm.reset(wait=True)
-    arm.disconnect()
+    my_xarm.reset(wait=True)
+    my_xarm.disconnect()
 
 
 def run(ctx):
