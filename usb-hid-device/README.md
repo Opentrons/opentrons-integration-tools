@@ -1,3 +1,5 @@
+# Integrating a USB HID-Class Device
+
 ### Introduction
 Many USB devices use the HID specification:
 
