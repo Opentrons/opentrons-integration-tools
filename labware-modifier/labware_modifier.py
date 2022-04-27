@@ -7,6 +7,8 @@ def set_labware_offsets(labware_name, x, y, z):
     labware_name: either the Opentrons labware API name, or custom 
                   labware file path
     x, y, z: offsets in mm
+    
+    returns: labware definition dict used by "load_labware_by_definition()"
     """
 
     if ".json" in labware_name:
