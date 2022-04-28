@@ -6,7 +6,7 @@ class BioshakeDriver():
         # Default Bioshake device name is /dev/ttyUSB0
         # If multiple Bioshakes are connected, you will need to find which
         # device uses which device file (ttyUSB0, ttyUSB1...)
-        # (See "serial-device/get_usb_devices.py")
+        # (See "serial-device/ttyusb_devices.py")
         DEVICE_NAME = my_device_name
     
         # Specified in the QInstruments documentation
