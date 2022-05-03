@@ -17,9 +17,9 @@ If you want to connect the OT-2 and the Eva via Ethernet, you will need an Ether
 ### Software Setup
 **Prerequisites: Set Up SSH**
 
-[Setting up SSH access to your OT-2](https://support.opentrons.com/en/articles/3203681-setting-up-ssh-access-to-your-ot-2)
+[Setting up SSH access to your OT-2](https://support.opentrons.com/s/article/Setting-up-SSH-access-to-your-OT-2)
 
-[Connecting to your OT-2 with SSH](https://support.opentrons.com/en/articles/3287453-connecting-to-your-ot-2-with-ssh)
+[Connecting to your OT-2 with SSH](https://support.opentrons.com/s/article/Connecting-to-your-OT-2-with-SSH)
 
 **Part 1: Install the Automata SDK**
 1. If your OT-2 is connected to the internet, you can install the SDK with `pip install evasdk`
