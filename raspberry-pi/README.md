@@ -16,10 +16,10 @@ However, its functionality is limited. Using a Raspberry Pi with the OT-2 OS ins
 * Ethernet cable
 
 ### Part 1: OS and Network Setup
-1. Flash the OT-2 OS onto the SD card by following these instructions (skip the "Next steps" section): https://support.opentrons.com/en/articles/5568992-reflashing-the-ot-2-s-sd-card
+1. Flash the OT-2 OS onto the SD card by following these instructions (skip the "Next steps" section): https://support.opentrons.com/s/article/Reflashing-the-OT-2-s-SD-card
 2. Connect the Raspberry Pi to your computer via Ethernet
 3. Open the Opentrons app and find the IP address of the Pi by looking at the yellow "Unable to establish connection" message (note: this message appears because there is no robot hardware is connected to the Pi, so the OS thinks that there is a hardware failure)
-4. Use that IP address to set up SSH by following these instructions: https://support.opentrons.com/en/articles/3203681-setting-up-ssh-access-to-your-ot-2
+4. Use that IP address to set up SSH by following these instructions: https://support.opentrons.com/s/article/Setting-up-SSH-access-to-your-OT-2
 
 ### Part 2: Configure the Simulated Hardware
 1. Create a JSON file that contains your desired hardware setup: https://github.com/Opentrons/opentrons/tree/edge/robot-server/simulators
