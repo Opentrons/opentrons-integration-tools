@@ -24,7 +24,7 @@ Opentrons has tested the xArm 6 and Biogripper, but the other xArm arms and grip
 **Part 1: Install the UFACTORY SDK**
 1. Download the latest version of the xArm Python SDK as a .zip ("Code" → "Download ZIP"): [xArm-Python-SDK](https://github.com/xArm-Developer/xArm-Python-SDK)
 2. Download the "ot-ufactory-install.ipynb" Jupyter notebook
-3. Upload the “xArm-Python-SDK-master.zip” file and the notebook to the OT-2's Jupyter notebook folder: [Uploading files through Jupyter Notebook](https://support.opentrons.com/en/articles/5107690-uploading-files-through-jupyter-notebook)
+3. Upload the “xArm-Python-SDK-master.zip” file and the notebook to the OT-2's Jupyter notebook folder: [Uploading files through Jupyter Notebook](https://support.opentrons.com/s/article/Uploading-files-through-Jupyter-Notebook)
 4. Run the "ot-ufactory-install.ipynb" Jupyter notebook (this will take about 10 seconds)
    - The automatic setup removes the "pandas" program from the OT-2. If you need to use "pandas" on the OT-2, don't use the notebook and instead run UFACTORY’s "setup.py" program manually.
    - The setup will have an exit code of 1 (unsuccessful) if your OT-2 is not connected to the internet, but the necessary files will still be installed.
@@ -46,7 +46,7 @@ Use the "ot-ufactory-wired-setup.ipynb" notebook
 
 Use the "ot-ufactory-wireless-setup.ipynb" notebook
 
-* If you use the Wi-Fi configuration, you may be unable to connect your computer to the OT-2 via Ethernet. If something happens to the Wi-Fi network (e.g. the Wi-Fi password is changed), you may be locked out of your OT-2 and you will have to reflash the SD card, meaning you will lose any data you have stored on the robot: [Reflashing the OT-2's SD card](https://support.opentrons.com/en/articles/5568992-reflashing-the-ot-2-s-sd-card)
+* If you use the Wi-Fi configuration, you may be unable to connect your computer to the OT-2 via Ethernet. If something happens to the Wi-Fi network (e.g. the Wi-Fi password is changed), you may be locked out of your OT-2 and you will have to reflash the SD card, meaning you will lose any data you have stored on the robot: [Reflashing the OT-2's SD card](https://support.opentrons.com/s/article/Reflashing-the-OT-2-s-SD-card)
 
 These network configurations will persist even after turning the OT-2 on/off, and/or unplugging the xArm (meaning you can safely shut down and unplug everything if you need to move equipment around). If you want to remove these network configurations, see the "Troubleshooting" section below.
 
@@ -60,9 +60,9 @@ In addition to manually setting the arm movements with the above functions, you 
 ### Troubleshooting
 If you have connection issues between the OT-2 and the xArm, you may need to SSH into the OT-2 to troubleshoot:
 
-[Setting up SSH access to your OT-2](https://support.opentrons.com/en/articles/3203681-setting-up-ssh-access-to-your-ot-2)
+[Setting up SSH access to your OT-2](https://support.opentrons.com/s/article/Setting-up-SSH-access-to-your-OT-2)
 
-[Connecting to your OT-2 with SSH](https://support.opentrons.com/en/articles/3287453-connecting-to-your-ot-2-with-ssh)
+[Connecting to your OT-2 with SSH](https://support.opentrons.com/s/article/Connecting-to-your-OT-2-with-SSH)
 
 The first step is to try to ping the xArm control box from the OT-2:
 
