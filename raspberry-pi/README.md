@@ -1,9 +1,9 @@
 # Setting Up a Raspberry Pi for Robot Simulation
 
 ### Introduction
-There are many cases where it is advantageous to do development and testing for the OT-2 without using a robot. One option is the Docker container that emulates a robot:
+There are many cases where it is advantageous to do development and testing for the OT-2 without using a robot. One option is running the Robot Server in simulation or emulation mode:
 
-https://github.com/Opentrons/opentrons/blob/edge/docker-compose.yml
+https://github.com/Opentrons/opentrons/tree/edge/robot-server#simulators
 
 However, its functionality is limited. Using a Raspberry Pi with the OT-2 OS installed gives you an experience that is much closer to working with a "real" robot. Some advantages:
 * Access to the robot's file system, and therefore SSH/SCP
