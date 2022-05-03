@@ -6,7 +6,7 @@ The OT-2 has a built-in camera that can be used to take pictures and videos of t
 ### Integration Summary
 If your camera is compatible with Linux, you can plug it in to the Raspberry Pi via USB and it will be found by Linux’s Video4Linux utility. A device file for it will appear in `/dev/`, e.g. `/dev/video2`. Use the camera's USB ID found in `/dev/v4l/by-id` to programmatically ensure that you are using the correct camera. `find_external_camera.py` is a simple Python module that does this.
 
-Knowing which device file is the one for your camera, you can use the `ffmpeg` tool to take pictures and videos following the instructions in [this article](https://support.opentrons.com/en/articles/2831465-using-the-ot-2-s-camera).
+Knowing which device file is the one for your camera, you can use the `ffmpeg` tool to take pictures and videos following the instructions in [this article](https://support.opentrons.com/s/article/Using-the-OT-2-s-camera).
 
 `protocol_external_camera.py` is an example of how you can write a protocol that uses an external camera (there are multiple ways to do it, but in this case, it may be easiest to just include everything in one Python file).
 
