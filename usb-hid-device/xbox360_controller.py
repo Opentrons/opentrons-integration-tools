@@ -19,8 +19,8 @@ USB_PRODUCT_ID = 0x028e
 READ_ENDPOINT = 0x81
 WRITE_ENDPOINT = 0x01
 
-# Seconds
-TIMEOUT = 30
+# 30 seconds
+TIMEOUT = 30000
 
 """
 Button inputs:
