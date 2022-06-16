@@ -34,3 +34,7 @@ However, its functionality is limited. Using a Raspberry Pi with the OT-2 OS ins
    - `OT_ROBOT_SERVER_simulator_configuration_file_path=/data/<your JSON file from Part 2>`
 3. Reboot the Pi
 4. After a few minutes, you should be able to "Connect" to the Pi in the app. Now you can calibrate the deck and pipettes as if you were using a real robot, and start uploading protocols!
+
+### Limitations
+* Can't run protocols via Jupyter or SSH (`opentrons.execute` calls `build_hardware_controller()`, which requires a real hardware controller)
+* `ProtocolContext.is_simulating()` is always true (not just in the analysis phase like on a real OT-2), making it not useful
