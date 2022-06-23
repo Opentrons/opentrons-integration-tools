@@ -39,6 +39,7 @@ def run(ctx):
 
     # Load well plate that is on Bioshake using the Bioshake's geometry
     # (see "labware-modifier")
+    # These specific numbers are for Bioshake 3000-T ELM with QOT adapter
     bioshake_x = -3.577
     bioshake_y = 3.665
     bioshake_z = 63
