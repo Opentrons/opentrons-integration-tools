@@ -46,7 +46,7 @@ def run(ctx):
     labware_with_offsets = labware_modifier.set_labware_offsets(
         labware_name = "nest_96_wellplate_2ml_deep",
         x = bioshake_x,
-        y = bioshae_y,
+        y = bioshake_y,
         z = bioshake_z)
     plate = ctx.load_labware_from_definition(labware_with_offsets, 10)
 
