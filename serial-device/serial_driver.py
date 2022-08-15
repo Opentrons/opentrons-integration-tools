@@ -13,8 +13,8 @@ PARITY = serial.PARITY_NONE
 STOPBITS = serial.STOPBITS_ONE
 
 # Optional timeouts in seconds
-READ_TIMEOUT = 2
-WRITE_TIMEOUT = 2
+READ_TIMEOUT = 0.5
+WRITE_TIMEOUT = 0.5
 
 
 class SerialDriver():
