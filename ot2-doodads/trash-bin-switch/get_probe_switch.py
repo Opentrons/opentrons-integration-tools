@@ -1,4 +1,4 @@
-# Returns state of trash bin probe switches
+# Gets the state of the trash bin probe switches
 # Have to run as Python script; not as Jupyter notebook
 # Run "systemctl stop opentrons-robot-server" before running
 
