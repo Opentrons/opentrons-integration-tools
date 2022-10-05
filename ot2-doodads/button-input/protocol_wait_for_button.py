@@ -13,7 +13,7 @@ def wait_for_button(ctx, hw_api, timeout):
 
     for _ in range(0, timeout):
 
-        log_msg = "Waiting for button press. Timeout = {} seconds.".format(timeout)
+        log_msg = f"Waiting for button press. Timeout = {timeout} seconds."
         ctx.delay(seconds=1, msg=log_msg)
 
         # True if button is pressed, False if not
