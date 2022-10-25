@@ -1,19 +1,20 @@
+# Protocol for BioShake 3000-T ELM with QOT adapter
+
 import sys
 import serial
 
 from opentrons import protocol_api
 
 # Python modules that have been uploaded to the Jupyter notebook
-# (bioshake.py, labware_modifier.py)
 sys.path.append("/var/lib/jupyter/notebooks/")
 import bioshake
-import labware_modifier
+import modify_labware_offsets
 
 
 metadata = {
     'protocolName': 'Protocol Bioshake',
     'author': 'Opentrons <protocols@opentrons.com>',
-    'description': 'Use QInstruments Bioshake with serial driver',
+    'description': 'Use QInstruments BioShake with serial driver',
     'apiLevel': '2.12'
 }
 
@@ -37,17 +38,10 @@ def run(ctx):
     # Load tip rack
     tip_rack = ctx.load_labware("opentrons_96_tiprack_300ul", 5)
 
-    # Load well plate that is on Bioshake using the Bioshake's geometry
+    # Load well plate that is on BioShake using the BioShake's geometry
     # (see "labware-modifier")
-    # These specific numbers are for Bioshake 3000-T ELM with QOT adapter
-    bioshake_x = -3.577
-    bioshake_y = 3.665
-    bioshake_z = 63
-    labware_with_offsets = labware_modifier.set_labware_offsets(
-        labware_name = "nest_96_wellplate_2ml_deep",
-        x = bioshake_x,
-        y = bioshake_y,
-        z = bioshake_z)
+    labware_with_offsets = modify_labware_offsets.modify_labware(
+        "nest_96_wellplate_2ml_deep")
     plate = ctx.load_labware_from_definition(labware_with_offsets, 10)
 
     # Load pipette
