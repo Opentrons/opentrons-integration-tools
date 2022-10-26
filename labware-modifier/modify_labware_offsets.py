@@ -27,7 +27,9 @@ def modify_labware(labware_name):
     lab_dict['cornerOffsetFromSlot']['x'] = DEVICE_X
     lab_dict['cornerOffsetFromSlot']['y'] = DEVICE_Y
     lab_dict['cornerOffsetFromSlot']['z'] = DEVICE_Z
+    lab_dict['parameters']['loadName'] = lab_name_mod
     lab_dict['metadata']['displayName'] = lab_name_mod
+    lab_dict['namespace'] = "custom_beta"
 
     return lab_dict
 
