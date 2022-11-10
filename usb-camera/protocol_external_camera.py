@@ -4,7 +4,7 @@ import subprocess
 
 metadata = {
     'protocolName': 'Protocol External Camera',
-    'author': 'Nicolas Binford <nicolas.binford@opentrons.com>',
+    'author': 'Opentrons <protocols@opentrons.com>',
     'description': 'Takes a photo with an external camera and puts it in Jupyter notebook',
     'apiLevel': '2.11'
 }
