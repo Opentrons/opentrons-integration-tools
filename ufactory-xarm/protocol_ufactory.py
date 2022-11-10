@@ -11,7 +11,7 @@ UFACTORY_IP = "192.168.1.207"
 
 metadata = {
     'protocolName': 'UFACTORY Example',
-    'author': 'Nicolas Binford <nicolas.binford@opentrons.com>',
+    'author': 'Opentrons <protocols@opentrons.com>',
     'description': 'Move the UFACTORY xArm in a protocol',
     'apiLevel': '2.12'
 }
