@@ -3,7 +3,7 @@ from opentrons import protocol_api
 
 metadata = {
     "protocolName": "Protocol Button Light",
-    "author": "Nicolas Binford <nicolas.binford@opentrons.com>",
+    "author": "Opentrons <protocols@opentrons.com>",
     "description": "Change button light color in a protocol",
     "apiLevel": "2.12"
 }
