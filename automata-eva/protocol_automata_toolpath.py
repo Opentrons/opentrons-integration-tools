@@ -9,7 +9,7 @@ AUTOMATA_TOKEN = ""
 
 metadata = {
     'protocolName': 'Automata Toolpath',
-    'author': 'Nicolas Binford <nicolas.binford@opentrons.com>',
+    'author': 'Opentrons <protocols@opentrons.com>',
     'description': 'Move the Automata Eva with toolpaths',
     'apiLevel': '2.12'
 }
