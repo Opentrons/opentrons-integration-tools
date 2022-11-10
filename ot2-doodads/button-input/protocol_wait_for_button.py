@@ -3,7 +3,7 @@ from opentrons import protocol_api
 
 metadata = {
     "protocolName": "Wait for Button",
-    "author": "Nicolas Binford <nicolas.binford@opentrons.com>",
+    "author": "Opentrons <protocols@opentrons.com>",
     "description": "Pause at a specified step, resume with button press",
     "apiLevel": "2.12"
 }
