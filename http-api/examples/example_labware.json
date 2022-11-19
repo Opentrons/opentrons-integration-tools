@@ -1,0 +1,247 @@
+{
+    "ordering": [
+        [
+            "A1",
+            "B1",
+            "C1",
+            "D1"
+        ],
+        [
+            "A2",
+            "B2",
+            "C2",
+            "D2"
+        ],
+        [
+            "A3",
+            "B3",
+            "C3",
+            "D3"
+        ],
+        [
+            "A4",
+            "B4",
+            "C4",
+            "D4"
+        ]
+    ],
+    "brand": {
+        "brand": "Nicoman",
+        "brandId": [
+            "94123"
+        ]
+    },
+    "metadata": {
+        "displayName": "Nicoman 16 Well Plate 5 µL",
+        "displayCategory": "wellPlate",
+        "displayVolumeUnits": "µL",
+        "tags": []
+    },
+    "dimensions": {
+        "xDimension": 127,
+        "yDimension": 86,
+        "zDimension": 21
+    },
+    "wells": {
+        "A1": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 25,
+            "y": 84,
+            "z": 11
+        },
+        "B1": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 25,
+            "y": 59,
+            "z": 11
+        },
+        "C1": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 25,
+            "y": 34,
+            "z": 11
+        },
+        "D1": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 25,
+            "y": 9,
+            "z": 11
+        },
+        "A2": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 50,
+            "y": 84,
+            "z": 11
+        },
+        "B2": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 50,
+            "y": 59,
+            "z": 11
+        },
+        "C2": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 50,
+            "y": 34,
+            "z": 11
+        },
+        "D2": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 50,
+            "y": 9,
+            "z": 11
+        },
+        "A3": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 75,
+            "y": 84,
+            "z": 11
+        },
+        "B3": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 75,
+            "y": 59,
+            "z": 11
+        },
+        "C3": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 75,
+            "y": 34,
+            "z": 11
+        },
+        "D3": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 75,
+            "y": 9,
+            "z": 11
+        },
+        "A4": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 100,
+            "y": 84,
+            "z": 11
+        },
+        "B4": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 100,
+            "y": 59,
+            "z": 11
+        },
+        "C4": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 100,
+            "y": 34,
+            "z": 11
+        },
+        "D4": {
+            "depth": 10,
+            "totalLiquidVolume": 5,
+            "shape": "rectangular",
+            "xDimension": 3,
+            "yDimension": 3,
+            "x": 100,
+            "y": 9,
+            "z": 11
+        }
+    },
+    "groups": [
+        {
+            "metadata": {
+                "wellBottomShape": "u"
+            },
+            "wells": [
+                "A1",
+                "B1",
+                "C1",
+                "D1",
+                "A2",
+                "B2",
+                "C2",
+                "D2",
+                "A3",
+                "B3",
+                "C3",
+                "D3",
+                "A4",
+                "B4",
+                "C4",
+                "D4"
+            ]
+        }
+    ],
+    "parameters": {
+        "format": "irregular",
+        "quirks": [],
+        "isTiprack": false,
+        "isMagneticModuleCompatible": false,
+        "loadName": "nicoman_16_wellplate_5ul"
+    },
+    "namespace": "custom_beta",
+    "version": 1,
+    "schemaVersion": 2,
+    "cornerOffsetFromSlot": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    }
+}
