@@ -195,14 +195,14 @@ You can control the run using the `POST /runs/${run_id}/actions` endpoint using 
 ```shell
 # start or resume the run
 curl -X POST "http://${ROBOT_IP}:31950/runs/${run_id}/actions" \
-    -H "Opentrons-Version: 3"
-    -H "Content-Type: application/json"
+    -H "Opentrons-Version: 3" \
+    -H "Content-Type: application/json" \
     -d '{ "data": { "actionType": "play" } }'
 
 # pause the run
 curl -X POST "http://${ROBOT_IP}:31950/runs/${run_id}/actions" \
-    -H "Opentrons-Version: 3"
-    -H "Content-Type: application/json"
+    -H "Opentrons-Version: 3" \
+    -H "Content-Type: application/json" \
     -d '{ "data": { "actionType": "pause" } }'
 
 # cancel the run
@@ -384,4 +384,4 @@ See the following Python examples for more details:
 - [atomic_commands_setup.py](https://github.com/Opentrons/opentrons-integration-tools/blob/main/http-api/examples/atomic_commands_setup.py)
 - [atomic_liquid_handling.py](https://github.com/Opentrons/opentrons-integration-tools/blob/main/http-api/examples/atomic_liquid_handling.py)
 - [atomic_move_to_well.py](https://github.com/Opentrons/opentrons-integration-tools/blob/main/http-api/examples/atomic_move_to_well.py)
-- [atomic_moves_advanced.pu](https://github.com/Opentrons/opentrons-integration-tools/blob/main/http-api/examples/atomic_moves_advanced.py)
+- [atomic_moves_advanced.py](https://github.com/Opentrons/opentrons-integration-tools/blob/main/http-api/examples/atomic_moves_advanced.py)
